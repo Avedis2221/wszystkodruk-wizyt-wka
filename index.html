@@ -46,16 +46,16 @@
                     <div class="marquee-wrapper">
                         <div class="marquee-track">
                             <span class="logo-serif">Palium</span>
-                            <span class="logo-tech">Kombinat®</span>
+                            <span class="logo-tech">Kombinat Investments</span>
                             <span class="logo-clean">Early Stage</span>
-                            <span class="logo-clean">Anabol</span>
-                            <span class="logo-serif">AutoKlucze</span>
+                            <span class="logo-clean">ENERGIA euro park</span>
+                            
                             
                             <span class="logo-serif">Palium</span>
-                            <span class="logo-tech">Kombinat®</span>
+                            <span class="logo-tech">Kombinat Investments</span>
                             <span class="logo-clean">Early Stage</span>
-                            <span class="logo-clean">Anabol</span>
-                            <span class="logo-serif">AutoKlucze</span>
+                            <span class="logo-clean">ENERGIA euro park</span>
+                        
                         </div>
                     </div>
                 </div>
@@ -103,6 +103,7 @@
                         <li>Materiały JHK</li>
                         <li>Pełna paleta barw</li>
                     </ul>
+                    <a href="katalog.pdf" target="_blank" class="btn-dark mt-4">Zobacz katalog odzieży (PDF) ↓</a>
                 </div>
                 <div class="image-box">
                     <img src="place2.png" alt="Grafik pracujący przy monitorze z koszulką" class="actual-content-img fixed-ratio-img">
@@ -165,42 +166,56 @@
                 <div class="carousel-track" id="realizacje-track">
                     <!-- Projekt 1 -->
                     <div class="carousel-slide">
-                        <img src="123.jpg" alt="Realizacja 1" class="carousel-img">
+                        <img src="palium2.png" alt="Realizacja 1" class="carousel-img">
                         <div class="gallery-info">
                             <h4>Firma Palium</h4>
-                            <p>Koszulki bawełniane premium, Druk DTF</p>
+                            <p>Robocze koszulki z nadrukiem DTF</p>
                         </div>
                     </div>
                     <!-- Projekt 2 -->
                     <div class="carousel-slide">
-                        <img src="123.jpg" alt="Realizacja 2" class="carousel-img">
+                        <img src="anabol.png" alt="Realizacja 2" class="carousel-img">
                         <div class="gallery-info">
-                            <h4>Early Stage</h4>
-                            <p>Bluzy z kapturem, Haft komputerowy</p>
+                            <h4>Marka Anabol</h4>
+                            <p>Sportowe koszulki premium</p>
                         </div>
                     </div>
                     <!-- Projekt 3 -->
                     <div class="carousel-slide">
-                        <img src="123.jpg" alt="Realizacja 3" class="carousel-img">
+                        <img src="autohaus.png" alt="Realizacja 3" class="carousel-img">
                         <div class="gallery-info">
-                            <h4>AutoKlucze</h4>
-                            <p>Odzież robocza, Trwały flex</p>
+                            <h4>Austryjacka firma Autohaus PSK</h4>
+                            <p>Bluzy robocze z kapturem o wysokiej gramaturze</p>
                         </div>
                     </div>
                     <!-- Projekt 4 -->
                     <div class="carousel-slide">
-                        <img src="123.jpg" alt="Realizacja 4" class="carousel-img">
+                        <img src="BIGBULL.png" alt="Realizacja 4" class="carousel-img">
                         <div class="gallery-info">
-                            <h4>Kombinat®</h4>
-                            <p>Czapki z daszkiem, Haft 3D</p>
+                            <h4>Kombinat Investments Sp. Z o.o.</h4>
+                            <p>Marka własna, odzież premium</p>
                         </div>
                     </div>
                     <!-- Projekt 5 -->
                     <div class="carousel-slide">
-                        <img src="123.jpg" alt="Realizacja 5" class="carousel-img">
+                        <img src="energia.png" alt="Realizacja 5" class="carousel-img">
                         <div class="gallery-info">
-                            <h4>Anabol</h4>
-                            <p>Odzież sportowa, Sublimacja</p>
+                            <h4>ENERGIA euro park</h4>
+                            <p>Biała odzież robocza</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="Euforia.png" alt="Realizacja 5" class="carousel-img">
+                        <div class="gallery-info">
+                            <h4>Szkoła tańca Euforia</h4>
+                            <p>Fioletowe koszulki dla instruktorów</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="gruzbud.png" alt="Realizacja 5" class="carousel-img">
+                        <div class="gallery-info">
+                            <h4>Firma Gruzbud</h4>
+                            <p>Trwała odzież robocza do pracy w warsztacie</p>
                         </div>
                     </div>
                 </div>
@@ -220,12 +235,11 @@
                 </div>
                 <div class="contact-right">
                     <!-- Zmieniony tag form z FormSubmit -->
-                    <form action="https://formsubmit.co/wszystkodrukuj@gmail.com" method="POST" class="contact-form">
-                        
-                        <!-- Ukryte opcje konfiguracyjne FormSubmit -->
-                        <input type="hidden" name="_subject" value="Nowe zapytanie o wycenę - WszystkoDruk!">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="text" name="_honey" style="display:none"> <!-- Ochrona przed botami (spamem) -->
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+    
+                         <input type="hidden" name="access_key" value="c84765fe-fa73-44fb-a50f-57848680dd4e">
+    
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
                         <div class="input-group">
                             <input type="text" name="Klient" id="name" required placeholder="Imię i nazwisko / Firma">
@@ -237,7 +251,7 @@
                             <textarea name="Wiadomosc" id="message" rows="4" required placeholder="Szczegóły projektu (np. ilość, rodzaj odzieży)"></textarea>
                         </div>
                         <button type="submit" class="btn-solid">Wyślij zapytanie</button>
-                    </form>
+</form>
                 </div>
             </div>
         </section>
@@ -246,46 +260,62 @@
 
     <script>
         // --- LOGIKA KARUZELI REALIZACJI ---
+// --- LOGIKA KARUZELI REALIZACJI (NIESKOŃCZONA PĘTLA) ---
+// --- LOGIKA KARUZELI REALIZACJI (POPRAWIONA NIESKOŃCZONA PĘTLA) ---
 const track = document.getElementById('realizacje-track');
+const wrapper = document.querySelector('.carousel-wrapper');
 
-if (track) {
-    let currentIndex = 0;
+if (track && wrapper) {
+    let isTransitioning = false;
+    let carouselInterval;
     
     function moveCarousel() {
+        if (isTransitioning) return;
+        isTransitioning = true;
+        
         const slides = track.querySelectorAll('.carousel-slide');
         if (slides.length === 0) return;
         
-        // Zwiększamy pozycję
-        currentIndex++;
-        
-        // Obliczamy ile elementów widać w danej chwili, aby wiedzieć kiedy zawrócić karuzelę
-        let visibleItems = window.innerWidth > 1024 ? 3 : (window.innerWidth > 768 ? 2 : 1);
-        let maxIndex = slides.length - visibleItems;
-        
-        // Jeśli dojedziemy do końca, resetujemy gładko na początek
-        if (currentIndex > maxIndex) {
-            currentIndex = 0; 
-        }
-        
-        // Obliczamy dokładną szerokość przesunięcia (szerokość zdjęcia + przerwa)
         const slideWidth = slides[0].offsetWidth;
         const gap = parseFloat(window.getComputedStyle(track).gap) || 0;
-        const moveAmount = (slideWidth + gap) * currentIndex;
+        const moveAmount = slideWidth + gap;
         
+        track.style.transition = 'transform 0.5s cubic-bezier(0.16, 1, 0.3, 1)';
         track.style.transform = `translateX(-${moveAmount}px)`;
     }
     
-    // Przewijaj karuzelę co 4 sekundy
-    let carouselInterval = setInterval(moveCarousel, 2500);
-    
-    // Zatrzymaj karuzelę, jeśli użytkownik najedzie na nią myszką (żeby mógł przeczytać)
-    track.addEventListener('mouseenter', () => clearInterval(carouselInterval));
-    
-    // Wznów działanie po odjechaniu myszką
-    track.addEventListener('mouseleave', () => {
-        carouselInterval = setInterval(moveCarousel, 2500);
+    // Obsługa zakończenia przesunięcia
+    track.addEventListener('transitionend', (e) => {
+        // KLUCZOWY FIX: Ignorujemy animacje ze zdjęć (czyli efekt hover, który psuł skrypt)
+        if (e.target !== track) return;
+        
+        isTransitioning = false;
+        track.style.transition = 'none';
+        
+        const firstSlide = track.querySelector('.carousel-slide');
+        track.appendChild(firstSlide);
+        
+        track.style.transform = 'translateX(0)';
+        void track.offsetHeight; // Wymuszenie odświeżenia przeglądarki
     });
+
+    function startCarousel() {
+        clearInterval(carouselInterval); // Zawsze czyścimy stary stoper przed odpaleniem nowego
+        carouselInterval = setInterval(moveCarousel, 2500);
+    }
+
+    function stopCarousel() {
+        clearInterval(carouselInterval);
+    }
+
+    // Uruchamiamy na start
+    startCarousel();
+    
+    // Blokujemy karuzelę, gdy myszka jest nad całą sekcją (bezpieczniejsze niż sam track)
+    wrapper.addEventListener('mouseenter', stopCarousel);
+    wrapper.addEventListener('mouseleave', startCarousel);
 }
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {

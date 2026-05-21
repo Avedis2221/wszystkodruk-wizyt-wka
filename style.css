@@ -301,14 +301,15 @@ body {
 /* Nieskończona gąsienica z logotypami */
 .marquee-track {
     display: flex;
-    gap: 4rem;
-    width: max-content;
-    animation: scrollMarquee 35s linear infinite;
+    gap: 3rem;
+    width: max-content; /* Konieczne, by gąsienica się nie łamała */
+    animation: scroll-marquee 20s linear infinite;
 }
 
-@keyframes scrollMarquee {
+@keyframes scroll-marquee {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); } /* Przesunięcie dokładnie o połowę zduplikowanej zawartości */
+    /* Przesuwamy dokładnie o POŁOWĘ szerokości gąsienicy (czyli o 1 zestaw logosów) */
+    100% { transform: translateX(-50%); }
 }
 
 /* Stylizowanie fałszywych logotypów (Grayscale + Subtelność) */

@@ -817,3 +817,104 @@ body {
     margin-bottom: 0.5rem; /* Zbliżenie do opisu, tworzy jedną bryłę */
     line-height: 1.1;
 }
+/* =========================================
+   POPRAWKI DLA WERSJI MOBILNEJ (SMARTFONY)
+   ========================================= */
+@media (max-width: 768px) {
+    /* 1. Zapobieganie przesuwaniu się strony na boki */
+    body, html {
+        overflow-x: hidden;
+    }
+
+    /* 2. Sekcja Główna (Hero) */
+    .hero-editorial {
+        grid-template-columns: 1fr; /* Zmiana na 1 kolumnę */
+        padding: 6rem 5% 3rem 5%;
+        gap: 2rem;
+        text-align: center;
+    }
+    .hero-left {
+        align-items: center; /* Wyśrodkowanie tekstu */
+    }
+    .hero-left h1 {
+        font-size: 3.2rem;
+        line-height: 1.1;
+    }
+    .hero-sub {
+        max-width: 100%; /* Pełna szerokość dla opisu */
+    }
+    .hero-ctas {
+        flex-direction: column; /* Przyciski jeden pod drugim */
+        width: 100%;
+        gap: 1.5rem;
+    }
+    .hero-ctas .btn-solid, 
+    .hero-ctas .btn-text {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+    }
+    .product-glow {
+        height: auto;
+        margin-top: 1rem;
+    }
+    .hero-product-img {
+        max-height: 350px;
+    }
+
+    /* 3. Sekcje Kroków (Naprawa zgniecionych zdjęć) */
+    .content-grid {
+        display: flex;
+        flex-direction: column; /* Wymuszenie stosu (jedno pod drugim) */
+        gap: 2rem;
+    }
+    /* Ustawiamy zdjęcia zawsze nad tekstem */
+    .image-box {
+        order: 1;
+        width: 100%;
+    }
+    .text-box {
+        order: 2;
+        width: 100%;
+        text-align: left;
+    }
+    /* Naprawa proporcji obrazka */
+    .actual-content-img.fixed-ratio-img {
+        width: 100%;
+        height: auto;
+        max-height: 350px;
+        object-fit: cover; /* Zapobiega spłaszczaniu */
+        border-radius: 8px;
+    }
+    .text-box h2 {
+        font-size: 2.8rem;
+    }
+
+    /* 4. Tło z wielkim napisem */
+    .bg-logo-text {
+        font-size: 25vw; /* Powiększenie tekstury na mobile */
+        top: 2rem;
+    }
+
+    /* 5. Przycisk pobierania PDF */
+    .check-list + .btn-dark {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    /* 6. Kontakt */
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+    .contact-left p {
+        max-width: 100%;
+    }
+    .contact-form .btn-solid {
+        width: 100%;
+        text-align: center;
+    }
+}

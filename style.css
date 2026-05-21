@@ -918,3 +918,96 @@ body {
         text-align: center;
     }
 }
+/* =========================================
+   MOCNY RESET SEKCJI HERO NA SMARTFONY
+   ========================================= */
+@media (max-width: 768px) {
+    /* Blokujemy wyciekanie strony na boki */
+    body, html {
+        overflow-x: hidden !important;
+        width: 100% !important;
+    }
+
+    /* Zmieniamy z Grid na bezpieczny pionowy Flexbox */
+    .hero-editorial {
+        display: flex !important;
+        flex-direction: column !important;
+        padding-top: 7rem !important; 
+        padding-bottom: 2rem !important;
+        gap: 2rem !important;
+        width: 100% !important;
+        overflow: hidden !important; 
+    }
+
+    /* Wymuszamy pełną szerokość i centrowanie dla obu kolumn */
+    .hero-left, .hero-right {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    /* Przywracamy widoczność i wielkość tekstu */
+    .hero-left h1 {
+        font-size: 2.8rem !important;
+        margin-bottom: 1.5rem !important;
+        line-height: 1.1 !important;
+    }
+
+    .hero-sub {
+        font-size: 1rem !important;
+        margin-bottom: 2rem !important;
+        max-width: 90% !important;
+    }
+
+    /* Naprawa białego prostokąta - przyciski układają się pod sobą */
+    .hero-ctas {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+        width: 100% !important;
+        align-items: center !important;
+    }
+
+    .btn-solid {
+        width: 85% !important;
+        max-width: 280px !important; /* Blokuje rozciąganie na 100% */
+        text-align: center !important;
+    }
+
+    /* Ściągamy uciekające zdjęcie z powrotem na środek */
+    .visual-container {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .product-glow {
+        width: 100% !important;
+        height: 350px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin-top: 2rem !important;
+    }
+
+    .hero-product-img {
+        max-width: 90% !important;
+        max-height: 100% !important;
+        object-fit: contain !important;
+        margin: 0 auto !important;
+    }
+
+    /* Chowamy gąsienicę z logotypami w ramy ekranu */
+    .hero-marquee-section {
+        width: 100vw !important; 
+        margin-left: -5% !important; 
+        overflow: hidden !important;
+    }
+
+    /* Na telefonach wyłączamy ten gigantyczny napis w tle - zajmuje za dużo miejsca */
+    .bg-logo-text {
+        display: none !important;
+    }
+}
